@@ -36,7 +36,7 @@ with st.form("registration_form"):
     submit_form = st.form_submit_button("Submit")
 
 # If the form is submitted
-if submit_form and not st.session_state.goals_processed:
+if submit_form:
     if uploaded_file is not None:
         # Read the pdf file
         pdf_reader = PdfReader(uploaded_file)
